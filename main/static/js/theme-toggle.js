@@ -1,10 +1,29 @@
 const storageKey = 'theme-preference'
 
-const onClick = () => {
+const onClick = (event) => {
   // flip current value
-  theme.value = theme.value === 'light'
-    ? 'dark'
-    : 'light'
+  // theme.value = theme.value === 'light'
+  //   ? 'dark'
+  //   : 'light'
+
+    if (theme.value === 'light') {
+      theme.value = 'dark'
+
+      // document.getElementById("menu").classList.toggle("show");
+      // if (!event.target.matches('.theme-toggle')) {
+      
+      //   var dropdowns = document.getElementsByClassName("menu-content");
+      //   var i;
+      //   for (i = 0; i < dropdowns.length; i++) {
+      //     var openDropdown = dropdowns[i];
+      //     if (openDropdown.classList.contains('show')) {
+      //       openDropdown.classList.remove('show');
+      //     }
+      //   }
+      // }
+    } else {
+      theme.value = 'light'
+    }
 
   setPreference()
 }
@@ -49,10 +68,10 @@ window.onload = () => {
     .addEventListener('click', onClick)
 }
 
-// sync with system changes
-window
-  .matchMedia('(prefers-color-scheme: dark)')
-  .addEventListener('change', ({matches:isDark}) => {
-    theme.value = isDark ? 'dark' : 'light'
-    setPreference()
-  })
+// // sync with system changes
+// window
+//   .matchMedia('(prefers-color-scheme: dark)')
+//   .addEventListener('change', ({matches:isDark}) => {
+//     theme.value = isDark ? 'dark' : 'light'
+//     setPreference()
+//   })

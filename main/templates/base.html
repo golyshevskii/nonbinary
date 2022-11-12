@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!-- dir="ltr" -->
+<html lang="en">
   <head>
     {% load static %}
     <title>{% block title %}NoNBinary | Love U{% endblock %}</title>
@@ -16,6 +17,7 @@
     <!-- {% bootstrap_css %} -->
   </head>
   <body>
+    <div class="container-fluid">
     <button class="theme-toggle" id="theme-toggle" title="Toggles light & dark" aria-label="auto" aria-live="polite">
       <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
         <mask class="moon" id="moon-mask">
@@ -35,8 +37,16 @@
          </g>
       </svg>
     </button>
-    {% block content %}
-        
-    {% endblock %}
+    <div id="menu" class="menu-content">
+      <div>
+        <a class="option" href="#">bar</a>
+      </div>
+      <div>
+        <a class="option" href="#">events</a>
+      </div>
+    </div>
+      {% block content %}
+      {% endblock %}
+    </div>
   </body>
 </html>
