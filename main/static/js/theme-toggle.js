@@ -8,19 +8,6 @@ const onClick = (event) => {
 
     if (theme.value === 'light') {
       theme.value = 'dark'
-
-      // document.getElementById("menu").classList.toggle("show");
-      // if (!event.target.matches('.theme-toggle')) {
-      
-      //   var dropdowns = document.getElementsByClassName("menu-content");
-      //   var i;
-      //   for (i = 0; i < dropdowns.length; i++) {
-      //     var openDropdown = dropdowns[i];
-      //     if (openDropdown.classList.contains('show')) {
-      //       openDropdown.classList.remove('show');
-      //     }
-      //   }
-      // }
     } else {
       theme.value = 'light'
     }
