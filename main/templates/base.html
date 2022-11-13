@@ -18,7 +18,7 @@
     <!-- {% bootstrap_css %} -->
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid col-auto col-sm-auto col-md-auto col-lg-auto col-xl-auto">
       <div class="w-10 h-10 d-block justify-content-start m-0 p-0 mb-0">
         <div class="d-inline-flex justify-content-start p-0 m-3 mb-0">
           <button class="theme-toggle" id="theme-toggle" title="Toggles light & dark" aria-label="auto" aria-live="polite">
@@ -51,6 +51,9 @@
             <a class="option-b" href="#">bar</a>
             <a class="option-b" href="#">events</a>
           </div>
+      </div>
+      <div class="d-flex justify-content-end p-0 m-0 mb-0">
+        <a class="exp-logo" href="#">EXP.</p>
       </div>
       {% block content %}
       {% endblock %}

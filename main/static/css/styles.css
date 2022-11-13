@@ -118,12 +118,13 @@ html {
 }
 
 html[data-theme=dark] {
-    color-scheme: dark
+    background: rgb(21, 33, 188);
+    /* color-scheme: dark */
 }
 
 @supports not (color-scheme: dark) {
     html[data-theme=dark] {
-        background: #111
+        background: rgb(21, 33, 188)
     }
 }
 
@@ -206,12 +207,12 @@ html[data-theme=dark] {
 .option-l {
     font-family: "BLACKBOX";
     font-size: 25px;
-    color: rgb(34, 34, 34);
+    color: rgb(21, 33, 188);
     text-decoration: none;
   }
 .option-l:hover, .option-l:focus {
     font-size: 28px;
-    color: rgb(255, 0, 98);
+    color: rgb(39, 39, 39);
     transition: 0.3s;
 }
 
@@ -227,6 +228,70 @@ html[data-theme=dark] {
   }
 .option-b:hover, .option-b:focus {
     font-size: 28px;
-    color: rgb(255, 0, 98);
+    color: rgb(39, 50, 202);
+    transition: 0.3s;
+}
+
+[data-theme=dark] .option-l {
+    font-family: "BLACKBOX";
+    font-size: 25px;
+    color: rgb(39, 50, 202);
+    text-decoration: none;
+  }
+[data-theme=dark] .option-l:hover, .option-l:focus {
+    font-size: 28px;
+    color: rgb(39, 39, 39);
+    transition: 0.3s;
+}
+
+[data-theme=dark] .option-b {
+    font-family: "BLACKBOX";
+    font-size: 25px;
+    color: rgb(240, 240, 240);
+    text-decoration: none;
+
+    writing-mode: vertical-lr; 
+    text-orientation: upright; 
+    letter-spacing: -0.4em;
+  }
+[data-theme=dark] .option-b:hover, .option-b:focus {
+    font-size: 28px;
+    color: rgb(39, 39, 39);
+    transition: 0.3s;
+}
+
+
+/* main elements */
+.exp-logo {
+    font-family: "BLACKBOX";
+    font-size: 45px;
+    color: rgb(39, 50, 202);
+    text-decoration: none;
+
+    writing-mode: vertical-lr; 
+    text-orientation: upright; 
+    letter-spacing: -0.4em;
+}
+
+[data-theme=dark] .exp-logo {
+    font-family: "BLACKBOX";
+    font-size: 45px;
+    color: rgb(240, 240, 240);
+    text-decoration: none;
+
+    writing-mode: vertical-lr; 
+    text-orientation: upright; 
+    letter-spacing: -0.4em;
+}
+
+.exp-logo:hover, .exp-logo:focus {
+    font-size: 55px;
+    color: rgb(39, 39, 39);
+    transition: 0.3s;
+}
+
+[data-theme=dark] .exp-logo:hover, .exp-logo:focus {
+    font-size: 55px;
+    color: rgb(39, 39, 39);
     transition: 0.3s;
 }
