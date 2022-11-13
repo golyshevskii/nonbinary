@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     {% load static %}
-    <title>{% block title %}NoNBinary | Love U{% endblock %}</title>
+    <title>{% block title %}EXP. | loveU{% endblock %}</title>
     <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,8 +18,8 @@
     <!-- {% bootstrap_css %} -->
   </head>
   <body>
-    <div class="container-fluid col-auto col-sm-auto col-md-auto col-lg-auto col-xl-auto">
-      <div class="w-10 h-10 d-block justify-content-start m-0 p-0 mb-0">
+    <!-- <div class="container-fluid col-auto col-sm-auto col-md-auto col-lg-auto col-xl-auto"> -->
+      <!-- <div class="w-10 h-10 d-block justify-content-start m-0 p-0 mb-0">
         <div class="d-inline-flex justify-content-start p-0 m-3 mb-0">
           <button class="theme-toggle" id="theme-toggle" title="Toggles light & dark" aria-label="auto" aria-live="polite">
           <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
@@ -40,23 +40,77 @@
             </g>
           </svg>
           </button>
-          <div class="d-inline-flex justify-content-start m-2 px-1 mb-0">
+          <div class="d-flex justify-content-start m-2 px-1 mb-1">
             <a class="option-l" href="#">haircuts</a>
             <a class="option-l" href="#">coloring</a>
             <a class="option-l" href="#">prices</a>
             <a class="option-l" href="#">aboutUS</a>
           </div>
         </div>
-          <div class="row justify-content-start m-2 px-1 mb-0">
+          <div class="row justify-content-start m-2 px-1 mb-1">
             <a class="option-b" href="#">bar</a>
             <a class="option-b" href="#">events</a>
           </div>
+      </div> -->
+    <!-- h-100 takes the full height of the body-->
+    <div class="container-fluid h-100 col-auto col-sm-auto col-md-auto col-lg-auto col-xl-auto">
+      <div class="row h-100">
+          <div class="col-2">
+            <div class="d-inline-flex justify-content-start p-0 m-3 mb-0">
+              <button class="theme-toggle" id="theme-toggle" title="Toggles light & dark" aria-label="auto" aria-live="polite">
+              <svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+                <mask class="moon" id="moon-mask">
+                  <rect x="0" y="0" width="100%" height="100%" fill="white" />
+                  <circle cx="24" cy="10" r="6" fill="black" />
+                </mask>
+                <circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor" />
+                <g class="sun-beams" stroke="currentColor">
+                <line x1="12" y1="1" x2="12" y2="3" />
+                <line x1="12" y1="21" x2="12" y2="23" />
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                <line x1="1" y1="12" x2="3" y2="12" />
+                <line x1="21" y1="12" x2="23" y2="12" />
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                </g>
+              </svg>
+              </button>
+            </div>
+            <div class="row justify-content-start m-2 p-2 px-1 mb-2">
+              <a class="option-b" href="#">bar</a>
+              <a class="option-b" href="#">events</a>
+            </div>
+            <div class="d-flex justify-content-start m-2 p-2 px-1">
+              <a class="exp-logo" href="#">EXP`</a>
+            </div>
+          </div>
+          <div class="col-10 m-0 p-3">
+              <!-- Top navbar -->
+              <nav class="navbar navbar-expand-lg navbar-light">
+                  <!-- navbar links -->
+                  <div class="collapse navbar-collapse">
+                      <div class="navbar-nav">
+                        <a class="option-l" href="#">haircuts</a>
+                        <a class="option-l" href="#">coloring</a>
+                        <a class="option-l" href="#">prices</a>
+                        <a class="option-l" href="#">aboutUS</a>
+                      </div>
+                  </div>
+              </nav>
+              {% block content %}
+              {% endblock %}
+              <!-- Contains the main content of the webpage-->
+              <p style="padding: 15px; text-align: justify;">
+                  Bootstrap is a free and open-source
+                  tool collection for creating responsive
+                  websites and web applications.
+                  It is the most popular HTML, CSS, and
+                  JavaScript framework for developing
+                  responsive, mobile-first web sites.
+              </p>
+          </div>
       </div>
-      <div class="d-flex justify-content-end p-0 m-0 mb-0">
-        <a class="exp-logo" href="#">EXP.</p>
-      </div>
-      {% block content %}
-      {% endblock %}
     </div>
   </body>
 </html>

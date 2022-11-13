@@ -211,7 +211,7 @@ html[data-theme=dark] {
     text-decoration: none;
   }
 .option-l:hover, .option-l:focus {
-    font-size: 28px;
+    font-size: 30px;
     color: rgb(39, 39, 39);
     transition: 0.3s;
 }
@@ -227,9 +227,9 @@ html[data-theme=dark] {
     letter-spacing: -0.4em;
   }
 .option-b:hover, .option-b:focus {
-    font-size: 28px;
+    /* font-size: 26px; */
     color: rgb(39, 50, 202);
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 [data-theme=dark] .option-l {
@@ -239,7 +239,7 @@ html[data-theme=dark] {
     text-decoration: none;
   }
 [data-theme=dark] .option-l:hover, .option-l:focus {
-    font-size: 28px;
+    /* font-size: 28px; */
     color: rgb(39, 39, 39);
     transition: 0.3s;
 }
@@ -255,7 +255,7 @@ html[data-theme=dark] {
     letter-spacing: -0.4em;
   }
 [data-theme=dark] .option-b:hover, .option-b:focus {
-    font-size: 28px;
+    /* font-size: 26px; */
     color: rgb(39, 39, 39);
     transition: 0.3s;
 }
@@ -264,7 +264,7 @@ html[data-theme=dark] {
 /* main elements */
 .exp-logo {
     font-family: "BLACKBOX";
-    font-size: 45px;
+    font-size: 55px;
     color: rgb(39, 50, 202);
     text-decoration: none;
 
@@ -275,23 +275,21 @@ html[data-theme=dark] {
 
 [data-theme=dark] .exp-logo {
     font-family: "BLACKBOX";
-    font-size: 45px;
+    font-size: 55px;
     color: rgb(240, 240, 240);
     text-decoration: none;
 
     writing-mode: vertical-lr; 
     text-orientation: upright; 
     letter-spacing: -0.4em;
-}
+} */
 
 .exp-logo:hover, .exp-logo:focus {
-    font-size: 55px;
     color: rgb(39, 39, 39);
     transition: 0.3s;
 }
 
 [data-theme=dark] .exp-logo:hover, .exp-logo:focus {
-    font-size: 55px;
     color: rgb(39, 39, 39);
     transition: 0.3s;
 }
