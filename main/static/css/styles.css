@@ -264,7 +264,7 @@ html[data-theme=dark] {
 /* main elements */
 .exp-logo {
     font-family: "BLACKBOX";
-    font-size: 55px;
+    font-size: 50px;
     color: rgb(39, 50, 202);
     text-decoration: none;
 
@@ -275,7 +275,7 @@ html[data-theme=dark] {
 
 [data-theme=dark] .exp-logo {
     font-family: "BLACKBOX";
-    font-size: 55px;
+    font-size: 50px;
     color: rgb(240, 240, 240);
     text-decoration: none;
 
