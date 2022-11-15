@@ -79,8 +79,9 @@
 }
 
 .theme-toggle {
-    --size: 3rem;
-    --icon-fill: rgb(69, 77, 84);
+    --size: 2rem;
+    /* rgb(69, 77, 84); */
+    --icon-fill: rgb(249, 248, 167);
     --icon-fill-hover: hsl(210 10% 15%);
     background: none;
     border: none;
@@ -102,8 +103,9 @@
 }
 
 [data-theme=dark] .theme-toggle {
-    --icon-fill: hsl(210 10% 70%);
-    --icon-fill-hover: hsl(210 15% 90%)
+    --icon-fill: rgb(234, 234, 234);
+    /* hsl(210 15% 90%) */
+    --icon-fill-hover: hsl(59, 87%, 82%);
 }
 
 @media (hover: none) {
@@ -157,55 +159,19 @@ html[data-theme=dark] {
 }
 
 
-/* menu */
+/* navbar */
 @font-face { 
     font-family: "BLACKBOX"; 
     src: url("BLACKBOX.ttf");
 }
 
-@keyframes fadeInUp {
-    from {
-      transform: translate3d(0, 30px, 0);
-    }
-    to {
-      transform: translate3d(0, 0, 0);
-      opacity: 1;
-    }
-}
-@keyframes fadeInDown {
-    from {
-      transform: translate3d(0, 0, 0);
-      opacity: 1;
-    }
-    to {
-      transform: translate3d(0, 20px, 0);
-      opacity: 0;
-    }
-}
-
-@keyframes moveRight{
-    from {
-      transform: translateX(-100%);
-    }
-    to {
-      transform: translateX(0%);
-    }
-}
-
-.menu-content {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0);
-
-    animation-name: fadeInUp;
-    -webkit-animation-name: fadeInUp;
-    animation-duration: 0.4s;
-    animation-fill-mode: both;
-    -webkit-animation-duration: 0.4s;
-    -webkit-animation-fill-mode: both;
+@font-face { 
+    font-family: "AlmaSans-Regular"; 
+    src: url("AlmaSans-Regular.ttf");
 }
 
 .option-l {
-    font-family: "BLACKBOX";
+    font-family: "AlmaSans-Regular";
     font-size: 25px;
     color: rgb(21, 33, 188);
     text-decoration: none;
@@ -217,14 +183,14 @@ html[data-theme=dark] {
 }
 
 .option-b {
-    font-family: "BLACKBOX";
+    font-family: "AlmaSans-Regular";
     font-size: 25px;
     color: rgb(240, 240, 240);
     text-decoration: none;
 
     writing-mode: vertical-lr; 
     text-orientation: upright; 
-    letter-spacing: -0.4em;
+    letter-spacing: -0.8em;
   }
 .option-b:hover, .option-b:focus {
     /* font-size: 26px; */
@@ -233,7 +199,7 @@ html[data-theme=dark] {
 }
 
 [data-theme=dark] .option-l {
-    font-family: "BLACKBOX";
+    font-family: "AlmaSans-Regular";
     font-size: 25px;
     color: rgb(39, 50, 202);
     text-decoration: none;
@@ -245,14 +211,14 @@ html[data-theme=dark] {
 }
 
 [data-theme=dark] .option-b {
-    font-family: "BLACKBOX";
+    font-family: "AlmaSans-Regular";
     font-size: 25px;
     color: rgb(240, 240, 240);
     text-decoration: none;
 
     writing-mode: vertical-lr; 
     text-orientation: upright; 
-    letter-spacing: -0.4em;
+    letter-spacing: -0.8em;
   }
 [data-theme=dark] .option-b:hover, .option-b:focus {
     /* font-size: 26px; */
@@ -260,11 +226,57 @@ html[data-theme=dark] {
     transition: 0.3s;
 }
 
+.option-c {
+    font-family: "AlmaSans-Regular";
+    font-size: 25px;
+    color: rgb(39, 50, 202);
+    text-decoration: none;
+  }
+.option-c:hover, .option-c:focus {
+    font-size: 30px;
+    color: rgb(39, 39, 39);
+    transition: 0.3s;
+}
 
-/* main elements */
+[data-theme=dark] .option-c {
+    font-family: "AlmaSans-Regular";
+    font-size: 25px;
+    color: rgb(240, 240, 240);
+    text-decoration: none;
+  }
+[data-theme=dark] .option-c:hover, .option-c:focus {
+    font-size: 30px;
+    color: rgb(39, 39, 39);
+    transition: 0.3s;
+}
+
+.option-exp-logo {
+    font-family: "BLACKBOX";
+    font-size: 35px;
+    color: rgb(39, 50, 202);
+    text-decoration: none;
+  }
+.option-exp-logo:hover, .option-exp-logo:focus {
+    /* font-size: 26px; */
+    color: rgb(39, 39, 39);
+    transition: 0.5s;
+}
+
+[data-theme=dark] .option-exp-logo {
+    font-family: "BLACKBOX";
+    font-size: 35px;
+    color: rgb(240, 240, 240);
+    text-decoration: none;
+  }
+[data-theme=dark] .option-exp-logo:hover, .option-exp-logo:focus {
+    /* font-size: 28px; */
+    color: rgb(39, 39, 39);
+    transition: 0.3s;
+}
+
 .exp-logo {
     font-family: "BLACKBOX";
-    font-size: 50px;
+    font-size: 35px;
     color: rgb(39, 50, 202);
     text-decoration: none;
 
@@ -275,7 +287,7 @@ html[data-theme=dark] {
 
 [data-theme=dark] .exp-logo {
     font-family: "BLACKBOX";
-    font-size: 50px;
+    font-size: 35px;
     color: rgb(240, 240, 240);
     text-decoration: none;
 
@@ -285,11 +297,33 @@ html[data-theme=dark] {
 } */
 
 .exp-logo:hover, .exp-logo:focus {
-    color: rgb(39, 39, 39);
-    transition: 0.3s;
+    color: rgb(39, 39, 39) !important;
+    transition: 0.3s !important;
 }
 
 [data-theme=dark] .exp-logo:hover, .exp-logo:focus {
     color: rgb(39, 39, 39);
     transition: 0.3s;
 }
+
+/* .exp-btn {
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+[data-theme=dark] .exp-btn {
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.exp-btn:hover, .exp-btn:focus {
+    border: none;
+    outline: none;
+}
+
+[data-theme=dark] .exp-btn:hover, .exp-btn:focus {
+    border: none;
+    outline: none;
+} */
