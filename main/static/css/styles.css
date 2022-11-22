@@ -116,7 +116,8 @@
 
 html {
     block-size: 100%;
-    color-scheme: light
+    color-scheme: light;
+    background: rgb(21, 33, 188);
 }
 
 html[data-theme=dark] {
@@ -201,7 +202,7 @@ html[data-theme=dark] {
 [data-theme=dark] .option-l {
     font-family: "AlmaSans-Regular";
     font-size: 25px;
-    color: rgb(39, 50, 202);
+    color: rgb(240, 240, 240);
     text-decoration: none;
   }
 [data-theme=dark] .option-l:hover, .option-l:focus {
@@ -233,7 +234,7 @@ html[data-theme=dark] {
     text-decoration: none;
   }
 .option-c:hover, .option-c:focus {
-    font-size: 30px;
+    font-size: 26px;
     color: rgb(39, 39, 39);
     transition: 0.3s;
 }
@@ -245,7 +246,7 @@ html[data-theme=dark] {
     text-decoration: none;
   }
 [data-theme=dark] .option-c:hover, .option-c:focus {
-    font-size: 30px;
+    font-size: 26px;
     color: rgb(39, 39, 39);
     transition: 0.3s;
 }
@@ -255,7 +256,8 @@ html[data-theme=dark] {
     font-size: 35px;
     color: rgb(39, 50, 202);
     text-decoration: none;
-  }
+}
+
 .option-exp-logo:hover, .option-exp-logo:focus {
     /* font-size: 26px; */
     color: rgb(39, 39, 39);
